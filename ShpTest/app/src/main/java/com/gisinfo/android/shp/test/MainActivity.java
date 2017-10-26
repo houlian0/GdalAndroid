@@ -165,7 +165,7 @@ public class MainActivity extends BaseActivity {
 
             // 获取要素中的几何体
             Geometry oGeometry = oFeature.GetGeometryRef();
-            tvShow.append("\n空间坐标：" + oGeometry.ExportToWkt());
+            tvShow.append("\n空间坐标：" + oGeometry.ExportToJson());
         }
 
         System.out.println("数据集关闭！");
